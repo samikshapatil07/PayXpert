@@ -1,11 +1,11 @@
 package dao;
 
-import entity.Employee; 
+
+import entity.Employee;
 import exception.DatabaseConnectionException;
 import exception.EmployeeNotFoundException;
 import exception.InvalidInputException;
-import util.DBConnUtil; // keep this
-// Removed import for DBPropertyUtil
+import util.DBConnUtil; 
 
 import java.sql.*;
 import java.util.ArrayList;
