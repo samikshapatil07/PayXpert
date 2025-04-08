@@ -4,8 +4,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import exception.DatabaseConnectionException;
 import util.DBConnUtil;
 
 public class DAOFinancialRecord {
@@ -67,9 +65,6 @@ public class DAOFinancialRecord {
 
         } catch (SQLException e) {
             System.out.println("Error generating financial report: " + e.getMessage());
-        } catch (DatabaseConnectionException e1) {
-            System.out.println("DatabaseConnectionException");
-			e1.printStackTrace();
-		}
+        }
     }
 }
